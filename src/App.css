@@ -1,3 +1,4 @@
+/* Root and App styling */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,38 +6,96 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-title {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
-.card {
-  padding: 2em;
+/* Search bar styling */
+.search-bar {
+  padding: 10px;
+  width: 400px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  outline: none;
 }
 
-.read-the-docs {
-  color: #888;
+.search-bar::placeholder {
+  color: #aaa;
+}
+
+/* User List and Card styling */
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-image {
+  width: 70%;
+  height: auto;
+}
+
+/* User details page */
+.user-details-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid white;
+}
+
+.user-details {
+  text-align: left;
+}
+
+.back-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: white;
 }
