@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export const useLoadTimer = (startTiming) => {
   const [timer, setTimer] = useState(0);

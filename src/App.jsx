@@ -120,7 +120,7 @@ function App() {
                         <UserCard key={user.id} user={user} loading={loading} />
                       ))
                     ) : (
-                      <p>No users found for "{searchTerm}"</p>
+                      <p>No users found for {searchTerm}</p>
                     )}
                   </div>
                   <div className="pagination">
